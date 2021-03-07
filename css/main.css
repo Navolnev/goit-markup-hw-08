@@ -1013,6 +1013,15 @@ a:hover, a:focus, a:active {
   }
 }
 
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .team-list > .team-list-item:not(:nth-last-child(-n + 2)) {
+    margin-bottom: 30px;
+  }
+  .team-list > .team-list-item:nth-last-child(2n) {
+    margin-right: 30px;
+  }
+}
+
 @media screen and (min-width: 768px) {
   .team-list {
     display: flex;
@@ -1192,19 +1201,36 @@ a:hover, a:focus, a:active {
   height: 70px;
 }
 
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .features-list {
+    flex-wrap: wrap;
+  }
+  .features-list .features-list-item:not(:nth-last-child(-n + 2)) {
+    margin-bottom: 30px;
+  }
+  .features-list .features-list-item {
+    width: 354px;
+  }
+  .features-list .features-list-item:nth-last-child(2n) {
+    margin-right: 30px;
+  }
+}
+
 @media screen and (min-width: 768px) {
   .features-list {
     display: flex;
   }
-  .features-list-item {
-    margin-bottom: 0;
-  }
-  .features-list-item:not(:last-child) {
-    margin-right: 30px;
-    max-width: 270px;
-  }
   .features h3 {
     text-align: left;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .features-list .features-list-item {
+    width: 270px;
+  }
+  .features-list .features-list-item:not(:last-child) {
+    margin-right: 30px;
   }
 }
 
